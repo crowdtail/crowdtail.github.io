@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowd tail - クラウドインフラサービス</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blue: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            600: '#2563eb',
+                            700: '#1d4ed8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-sm border-b sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="cloud" class="h-8 w-8 text-blue-600"></i>
+                    <span class="text-2xl font-bold text-gray-900">Crowd tail</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors">サービス</a>
+                    <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors">特徴</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-blue-600 transition-colors">料金</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">会社概要</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">お問い合わせ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto text-center">
+            <div class="inline-block mb-4 px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+                Enterprise Cloud Infrastructure
+            </div>
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                信頼性の高い<br>
+                <span class="text-blue-600">クラウドインフラ</span>を提供
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                最新のクラウド技術で、お客様のビジネスを支える堅牢で高性能なサーバー・ストレージソリューションを提供いたします。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#services" class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
+                    サービス詳細を見る
+                    <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                </a>
+                <a href="#contact" class="inline-flex items-center px-6 py-3 border border-gray-300 hover:bg-gray-50 text-gray-700 font-medium rounded-lg transition-colors">
+                    お問い合わせ
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">提供サービス</h2>
+                <p class="text-xl text-gray-600">お客様のニーズに合わせた包括的なクラウドソリューション</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow rounded-lg p-6">
+                    <i data-lucide="server" class="h-12 w-12 text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">クラウドサーバー</h3>
+                    <p class="text-gray-600 mb-4">高性能で拡張性に優れたクラウドサーバーインスタンス</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                            99.9%稼働率保証
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                            自動スケーリング
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                            24時間監視
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow rounded-lg p-6">
+                    <i data-lucide="database" class="h-12 w-12 text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">クラウドストレージ</h3>
+                    <p class="text-gray-600 mb-4">安全で高速なデータストレージソリューション</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                            暗号化対応
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                            自動バックアップ
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                            高速アクセス
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow rounded-lg p-6">
+                    <i data-lucide="shield" class="h-12 w-12 text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">セキュリティ</h3>
+                    <p class="text-gray-600 mb-4">企業レベルのセキュリティ対策とコンプライアンス</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                            多層防御
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                            侵入検知
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check-circle" class="h-4 w-4 text-green-500 mr-2"></i>
+                            コンプライアンス対応
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">選ばれる理由</h2>
+                <p class="text-xl text-gray-600">技術力と信頼性で、お客様のビジネスを支えます</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="zap" class="h-8 w-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">高性能</h3>
+                    <p class="text-gray-600">最新のハードウェアと最適化されたソフトウェアで高速処理を実現</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="clock" class="h-8 w-8 text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">24時間サポート</h3>
+                    <p class="text-gray-600">専門エンジニアによる24時間365日の技術サポート体制</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="lock" class="h-8 w-8 text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">セキュリティ</h3>
+                    <p class="text-gray-600">業界標準を上回るセキュリティ対策でデータを保護</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="bar-chart-3" class="h-8 w-8 text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">拡張性</h3>
+                    <p class="text-gray-600">ビジネスの成長に合わせて柔軟にスケールアップ可能</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 px-4 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">料金について</h2>
+                <p class="text-xl text-gray-600">お客様のご要望に合わせた柔軟な料金体系</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 mb-8">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">カスタム料金プラン</h3>
+                        <p class="text-lg text-gray-600 mb-6">
+                            お客様の利用規模、必要な機能、契約期間に応じて最適な料金プランをご提案いたします。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                        <h4 class="text-xl font-semibold mb-4 text-gray-900">料金決定要因</h4>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-green-500 mr-2 mt-0.5"></i>
+                                <span>サーバーのスペック・台数</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-green-500 mr-2 mt-0.5"></i>
+                                <span>ストレージ容量・種類</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-green-500 mr-2 mt-0.5"></i>
+                                <span>データ転送量</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-green-500 mr-2 mt-0.5"></i>
+                                <span>契約期間</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="h-5 w-5 text-green-500 mr-2 mt-0.5"></i>
+                                <span>サポートレベル</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                        <h4 class="text-xl font-semibold mb-4 text-gray-900">料金の特徴</h4>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i data-lucide="dollar-sign" class="h-5 w-5 text-blue-500 mr-2 mt-0.5"></i>
+                                <span>従量課金制で無駄なコストを削減</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="trending-down" class="h-5 w-5 text-blue-500 mr-2 mt-0.5"></i>
+                                <span>長期契約割引あり</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="shield-check" class="h-5 w-5 text-blue-500 mr-2 mt-0.5"></i>
+                                <span>初期費用無料</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="clock" class="h-5 w-5 text-blue-500 mr-2 mt-0.5"></i>
+                                <span>月額・年額支払い対応</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="calculator" class="h-5 w-5 text-blue-500 mr-2 mt-0.5"></i>
+                                <span>無料見積もり・相談</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="#contact" class="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors text-lg">
+                        <i data-lucide="calculator" class="mr-2 h-5 w-5"></i>
+                        無料見積もりを依頼する
+                    </a>
+                    <p class="text-sm text-gray-500 mt-4">お見積もりは24時間以内にご回答いたします</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 px-4 bg-blue-600 text-white">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold mb-2">99.9%</div>
+                    <div class="text-blue-100">稼働率</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">20+</div>
+                    <div class="text-blue-100">導入企業</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">24/7</div>
+                    <div class="text-blue-100">サポート体制</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">2024</div>
+                    <div class="text-blue-100">設立年</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 bg-white">
+        <div class="container mx-auto">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-gray-900 mb-8">会社概要</h2>
+                <p class="text-lg text-gray-600 mb-8">
+                    Crowd tailは、最新のクラウド技術を活用して、中小企業や個人事業主のデジタル変革を支援する専門サービスです。
+                    豊富な技術経験を持つエンジニアが、お客様のビジネス要件に最適なクラウドインフラソリューションを提供いたします。
+                    小規模から始めて、成長に合わせてスケールできるソリューションを得意としています。
+                </p>
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="text-center">
+                        <i data-lucide="award" class="h-12 w-12 text-blue-600 mx-auto mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">技術力</h3>
+                        <p class="text-gray-600">AWS、Azure認定エンジニア</p>
+                    </div>
+                    <div class="text-center">
+                        <i data-lucide="users" class="h-12 w-12 text-green-600 mx-auto mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">個人対応</h3>
+                        <p class="text-gray-600">きめ細かい個別サポート</p>
+                    </div>
+                    <div class="text-center">
+                        <i data-lucide="globe" class="h-12 w-12 text-purple-600 mx-auto mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">グローバル対応</h3>
+                        <p class="text-gray-600">世界各地のデータセンター</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-gray-900 mb-8">お問い合わせ</h2>
+                <p class="text-lg text-gray-600 mb-12">
+                    クラウドインフラに関するご相談やお見積りは、お気軽にお問い合わせください。
+                </p>
+
+                <div class="bg-white border-0 shadow-lg rounded-lg p-8">
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-center space-x-4">
+                            <i data-lucide="mail" class="h-6 w-6 text-blue-600"></i>
+                            <div>
+                                <div class="font-semibold">メールでのお問い合わせ</div>
+                                <a href="mailto:info@crowdtail.com" class="text-blue-600 hover:underline">
+                                    info@crowdtail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <a href="mailto:info@crowdtail.com" class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
+                                <i data-lucide="mail" class="mr-2 h-4 w-4"></i>
+                                メールを送信
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-sm text-gray-500">
+                    <p>営業時間: 平日 9:00-18:00 (土日祝日除く)</p>
+                    <p>お問い合わせから24時間以内にご返信いたします</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                    <i data-lucide="cloud" class="h-6 w-6 text-blue-400"></i>
+                    <span class="text-xl font-bold">Crowd tail</span>
+                </div>
+                <div class="text-sm text-gray-400">© 2024 Crowd tail. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
