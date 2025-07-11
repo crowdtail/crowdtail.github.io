@@ -1,0 +1,13 @@
+# Jekyllがメタタグを改変しないように設定
+include:
+  - "_headers"
+  - "_redirects"
+keep_files:
+  - "assets"
+plugins:
+  - jekyll-feed
+
+# 以下を追加
+markdown: kramdown
+kramdown:
+  parse_block_html: true
